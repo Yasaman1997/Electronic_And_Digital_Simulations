@@ -1,0 +1,4 @@
+* source 2
+D_D1         N00089 0 D1N4740 
+R_R1         N00116 N00089  1k  
+V_V1         N00116 0 DC 0Vdc AC 1Vac 

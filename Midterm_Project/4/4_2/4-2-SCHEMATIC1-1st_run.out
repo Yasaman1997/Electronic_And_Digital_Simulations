@@ -1,0 +1,117 @@
+
+**** 04/22/17 20:12:37 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1st_run"  [ D:\A\e, sources\Electronic\Homeworks\Midterm Project\mid_project\4\4_2\4-2-schematic1-1st_run.si
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "4-2-schematic1-1st_run.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 500000ns 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\4-2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING 4-2-SCHEMATIC1.net ****
+* source 4-2
+D_D7         0 N12083 D1N4749 
+D_D8         N11649 N12015 D1N4001 
+C_C5         0 N12015  100uF  
+R_R3         N12015 N12334  1k  
+D_D9         0 N11649 D1N4001 
+R_R4         N11946 N12083  1k  
+D_D10         N11572 N12015 D1N4001 
+D_D11         N12045 N11572 D1N4001 
+D_D12         N12045 N11572 D1N4001 
+V_V2         N11572 N11795  
++SIN 0 5 50 0 0 0
+D_D13         N11572 N11946 D1N4001 
+D_D14         0 N11795 D1N4001 
+D_D15         N11795 N11946 D1N4001 
+D_D6         0 N12334 D1N4736 
+C_C8         N11946 0  100uF  
+
+**** RESUMING 4-2-schematic1-1st_run.sim.cir ****
+.END
+
+**** 04/22/17 20:12:37 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1st_run"  [ D:\A\e, sources\Electronic\Homeworks\Midterm Project\mid_project\4\4_2\4-2-schematic1-1st_run.si
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4749         D1N4001         D1N4736         
+          IS   25.940000E-15   14.110000E-09    1.327000E-15 
+           N                    1.984                        
+         ISR    2.052000E-09                    2.575000E-09 
+         IKF                   94.81                         
+          BV   24              75               6.8          
+         IBV     .14951        10.000000E-06   15            
+         NBV    1.3684                           .31009      
+        IBVL  164.370000E-06                  149.200000E-06 
+        NBVL   14                                .31028      
+          RS    9.006            .03389         1.306        
+          TT                    5.700000E-06                 
+         CJO   41.000000E-12   25.890000E-12  125.000000E-12 
+          VJ     .75             .3245           .75         
+           M     .2715           .44             .3144       
+        TBV1  895.830000E-06                  485.290000E-06 
+
+
+**** 04/22/17 20:12:37 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1st_run"  [ D:\A\e, sources\Electronic\Homeworks\Midterm Project\mid_project\4\4_2\4-2-schematic1-1st_run.si
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N11572)-2.488E-12 (N11649)-1.019E-12 (N11795)-2.488E-12 (N11946)-2.528E-12     
+
+(N12015)-2.037E-12 (N12045)-2.400E-12 (N12083)-2.528E-12 (N12334)-2.037E-12 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         1.397E-19
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .08
+

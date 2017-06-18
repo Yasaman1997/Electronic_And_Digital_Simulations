@@ -1,0 +1,70 @@
+
+**** 04/24/17 22:44:52 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1st run "  [ D:\A\e, sources\Electronic\Homeworks\Midterm Project\mid_project\1\1-schematic1-1st run .sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1-schematic1-1st run .sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0 10 0.01 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\1-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING 1-SCHEMATIC1.net ****
+* source 1
+D_D1         N00170 0 D1N4148 
+R_R1         N00077 N00170  1k  
+V_V1         N00077 0 5Vdc
+
+**** RESUMING "1-schematic1-1st run .sim.cir" ****
+.END
+
+**** 04/24/17 22:44:52 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1st run "  [ D:\A\e, sources\Electronic\Homeworks\Midterm Project\mid_project\1\1-schematic1-1st run .sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         
+          IS    2.682000E-09 
+           N    1.836        
+         ISR    1.565000E-09 
+         IKF     .04417      
+          BV  100            
+         IBV  100.000000E-06 
+          RS     .5664       
+          TT   11.540000E-09 
+         CJO    4.000000E-12 
+          VJ     .5          
+           M     .3333       
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .28
+

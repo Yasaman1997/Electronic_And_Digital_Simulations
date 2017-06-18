@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-1st run - alef"  [ D:\A\e, sources\Electronic\Homeworks\Midterm Project\mid_project\1\1-schematic1-1st run - alef.sim ] 
+
+** Creating circuit file "1-schematic1-1st run - alef.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\1-SCHEMATIC1.net" 
+
+
+.END

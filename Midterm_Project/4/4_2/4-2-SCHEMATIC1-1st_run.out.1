@@ -1,0 +1,52 @@
+
+**** 04/22/17 16:15:17 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1st_run"  [ D:\A\E, SOURCES\ELECTRONIC\HOMEWORKS\MIDTERM PROJECT\MID_PROJECT\4\4_2\4-2-SCHEMATIC1-1st_run.si
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "4-2-SCHEMATIC1-1st_run.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\4-2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING 4-2-SCHEMATIC1.net ****
+* source 4-2
+D_D7         0 N12083 D1N4749 
+D_D8         N11649 N12015 D1N4001 
+C_C5         N13791 N12015  100uF  
+R_R3         N12015 N12334  1k  
+D_D9         0 N11649 D1N4001 
+R_R4         N11946 N12083  1k  
+D_D10         N11572 N12015 D1N4001 
+D_D11         N12045 N11572 D1N4001 
+D_D12         N12045 N11572 D1N4001 
+V_V2         N11572 N11795  
++SIN 0 5 50 0 0 0
+D_D13         N11572 N11946 D1N4001 
+D_D14         0 N11795 D1N4001 
+D_D15         N11795 N11946 D1N4001 
+D_D6         0 N12334 D1N4736 
+C_C8         N11946 N13791  100uF  
+
+**** RESUMING 4-2-SCHEMATIC1-1st_run.sim.cir ****
+.END
+
+ERROR -- Node N13791 is floating

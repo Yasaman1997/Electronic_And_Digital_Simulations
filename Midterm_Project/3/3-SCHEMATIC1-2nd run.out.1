@@ -1,0 +1,44 @@
+
+**** 03/31/17 14:32:22 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-2nd run"  [ D:\A\e, sources\Electronic\Homeworks\Midterm Project\mid_project\3\3-schematic1-2nd run.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "3-schematic1-2nd run.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of d:\orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0 50 0.1 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\3-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING 3-SCHEMATIC1.net ****
+* source 3
+R_R1         N01211 N01344  5k  
+D_D1         N01249 N01290 D1N4740 
+D_D2         N01344 N01290 D1N4740 
+V_V1         N01211 N01249  
++SIN 0 50 50 0 0 0
+
+**** RESUMING "3-schematic1-2nd run.sim.cir" ****
+.END
+
+ERROR -- Node N01211 is floating
+ERROR -- Node N01344 is floating
+ERROR -- Node N01249 is floating
+ERROR -- Node N01290 is floating
