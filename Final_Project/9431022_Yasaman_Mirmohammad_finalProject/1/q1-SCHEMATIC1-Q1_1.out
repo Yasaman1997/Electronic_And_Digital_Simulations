@@ -1,0 +1,110 @@
+
+**** 07/08/17 11:51:57 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q1_1"  [ D:\A\e, sources\Electronic\Homeworks\Final_Project\9431022_Yasaman_Mirmohammad_finalProject\1\q1-sc
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "q1-schematic1-q1_1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB ".\q1.lib" 
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0 10us 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\q1-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING q1-SCHEMATIC1.net ****
+* source Q1
+V_Vcc         0 N00926 -10Vdc
+R_R1         N00887 N00926  16k  
+R_R2         0 N00887  4k  
+R_Re_1         N01069 N01040  0.172k  
+R_Rc         N05335 N00926  8.33k  
+C_C2         N00801 N00887  10u  
+R_Re_2         0 N01069  8.827k  
+R_Rs         N00751 N00801  100  
+Q_Q1         N05335 N00887 N01040 Qbreakn 
+C_C3         0 N01069  100u  
+V_V2         N00751 0  
++SIN 0 1m 100  0 0 0
+C_C1         N05335 N05652  1u  
+R_Rl         0 N05652  10k  
+
+**** RESUMING q1-schematic1-q1_1.sim.cir ****
+.END
+
+**** 07/08/17 11:51:57 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q1_1"  [ D:\A\e, sources\Electronic\Homeworks\Final_Project\9431022_Yasaman_Mirmohammad_finalProject\1\q1-sc
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Qbreakn         
+               NPN             
+          IS  100.000000E-18 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 07/08/17 11:51:57 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q1_1"  [ D:\A\e, sources\Electronic\Homeworks\Final_Project\9431022_Yasaman_Mirmohammad_finalProject\1\q1-sc
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00751)    0.0000 (N00801)    0.0000 (N00887)    1.9955 (N00926)   10.0000     
+
+(N01040)    1.2722 (N01069)    1.2479 (N05335)    8.8341 (N05652)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vcc        6.402E-04
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   6.40E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            1.53
+

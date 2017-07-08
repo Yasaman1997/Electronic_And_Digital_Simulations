@@ -1,0 +1,5 @@
+* PSpice Model Editor - Version 9.2
+
+*$
+.model Qbreakn nrp(Is=8.25e-14 Bf=100)
+*$

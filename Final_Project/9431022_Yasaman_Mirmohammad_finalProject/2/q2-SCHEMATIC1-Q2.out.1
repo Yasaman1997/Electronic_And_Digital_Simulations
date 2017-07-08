@@ -1,0 +1,147 @@
+
+**** 07/05/17 16:26:09 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q2"  [ D:\A\e, sources\Electronic\Homeworks\Final_Project\9431022_Yasaman_Mirmohammad_finalProject\2\q2-sche
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "q2-schematic1-q2.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 999900s 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\q2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING q2-SCHEMATIC1.net ****
+* source Q2
+R_R8         N02070 N01594  6.8k  
+V_V2         0 N01594 +15Vdc
+R_R1         N06225 N01594  330k  
+Q_Q2         N02070 N06490 N07932 Q2N3904
+R_R9         N02014 N07932  130  
+R_R2         N01795 N06225  330k  
+V_V3         N01795 0 -15Vdc
+R_R10         N01795 N02014  5k  
+C_C1         N01290 N06225  10   
+R_R5         N01795 N01766  22k  
+C_C3         N06490 N01766  10uF  
+V_V1         N01290 0  
++SIN 0 40  1k 0 0 0
+R_R6         N06490 N01594  47k  
+Q_Q4         N01766 N06225 N13791 Q2N3906
+R_R3         N01710 N01594  33k  
+R_R7         N01795 N06490  22k  
+R_R4         N13791 N01710  1.0k  
+C_C4         N01795 N02014  100   
+C_C5         N02070 0  10uF  
+C_C2         N01710 N01594  10uF  
+
+**** RESUMING q2-schematic1-q2.sim.cir ****
+.END
+
+**** 07/05/17 16:26:09 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q2"  [ D:\A\e, sources\Electronic\Homeworks\Final_Project\9431022_Yasaman_Mirmohammad_finalProject\2\q2-sche
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         Q2N3906         
+               NPN             PNP             
+          IS    6.734000E-15    1.410000E-15 
+          BF  416.4           180.7          
+          NF    1               1            
+         VAF   74.03           18.7          
+         IKF     .06678          .08         
+         ISE    6.734000E-15                 
+          NE    1.259                        
+          BR     .7371          4.977        
+          NR    1               1            
+          RB   10              10            
+          RC    1               2.5          
+         CJE    4.493000E-12    8.063000E-12 
+         MJE     .2593           .3677       
+         CJC    3.638000E-12    9.728000E-12 
+         MJC     .3085           .5776       
+          TF  301.200000E-12  179.300000E-12 
+         XTF    2               6            
+         VTF    4               4            
+         ITF     .4              .4          
+          TR  239.500000E-09   33.420000E-09 
+         XTB    1.5             1.5          
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 07/05/17 16:26:09 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q2"  [ D:\A\e, sources\Electronic\Homeworks\Final_Project\9431022_Yasaman_Mirmohammad_finalProject\2\q2-sche
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01290)    0.0000 (N01594)  -15.0000 (N01710)  -15.0000 (N01766)  -15.0000     
+
+(N01795)  -15.0000 (N02014)  -15.0000 (N02070)  -15.0000 (N06225)  -15.0000     
+
+(N06490)  -15.0000 (N07932)  -15.0000 (N13791)  -15.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -1.457E-15
+    V_V3         2.429E-16
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   2.55E-14  WATTS
+
+
+ERROR -- Time step =  48.89E-09 is too small in Transient Analysis at
+Time =  2.049E-06.  Minimum allowable step size =  999.9E-09.
+         The device which is changing too fast is Q_Q2.
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01290)    1.0051 (N01594)  -15.0000 (N01710)  -15.0000 (N01766)  -14.9850     
+
+(N01795)  -15.0000 (N02014)  -15.0000 (N02070)  -15.0000 (N06225)  -13.9950     
+
+(N06490)  -14.9850 (N07932)  -15.0000 (N13791)  -14.9980 
+

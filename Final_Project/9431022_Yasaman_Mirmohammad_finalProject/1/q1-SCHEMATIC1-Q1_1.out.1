@@ -1,0 +1,53 @@
+
+**** 06/29/17 12:17:13 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Q1_1"  [ D:\A\e, sources\Electronic\Homeworks\Final_Project\9431022_Yasaman_Mirmohammad_finalProject\1\q1-sc
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "q1-schematic1-q1_1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB ".\q1.lib" 
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC DEC V_V2 0 100 0.01 
+-------------$
+ERROR -- Invalid start value
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\q1-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING q1-SCHEMATIC1.net ****
+* source Q1
+V_Vcc         0 N00926 10Vdc
+R_R1         N00887 N00926  {a}  
+R_R2         0 N00887  {b}  
+R_Re_1         N01069 N01040  {d}  
+R_Rc         N03008 N00926  {c}  
+C_C2         N00801 N00887  10uF  
+R_Re_2         0 N01069  1  
+R_Rs         N00751 N00801  100  
+Q_Q1         N03008 N00887 N01040 Qbreakn 
+C_C3         0 N01069  100   
+V_V2         N00751 0  
++SIN 0 1  100  0 0 0
+C_C1         N00926 N01232  1uF  
+R_Rl         0 N01232  10k  
+.PARAM  a=1k b=1k c=1k d=1k
+
+**** RESUMING q1-schematic1-q1_1.sim.cir ****
+.END
+
