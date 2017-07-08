@@ -1,0 +1,10 @@
+* source BINARYWEIGHTED RESISTOR LADDER DAC
+R_R1         0 N00805  2k  
+R_R2         0 N00805  4k  
+R_R6         N00261 N00235  1k  
+R_R3         0 N00805  8k  
+R_R7         0 N00261  1k  
+R_R4         N05499 N00805  1k  
+V_V1         0 N00805 -5Vdc
+R_R5         0 N00805  16k  
+E_U1         N00235 0 VALUE {LIMIT(V(N05499,N00261)*1E6,-15V,+15V)}

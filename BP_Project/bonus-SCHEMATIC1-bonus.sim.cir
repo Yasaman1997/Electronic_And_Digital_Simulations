@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-bonus"  [ D:\A\E, SOURCES\ELECTRONIC\HOMEWORKS\BP_PROJECT\bonus-SCHEMATIC1-bonus.sim ] 
+
+** Creating circuit file "bonus-SCHEMATIC1-bonus.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\bonus-SCHEMATIC1.net" 
+
+
+.END

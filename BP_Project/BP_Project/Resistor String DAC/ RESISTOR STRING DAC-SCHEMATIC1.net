@@ -1,0 +1,10 @@
+* source  RESISTOR STRING DAC
+R_R6         0 0  1k  
+R_R7         0 0  1k  
+V_V1         N01440 0 5Vdc
+R_R1         0 N01440  1k  
+R_R2         0 0  1k  
+R_R3         0 0  1k  
+R_R4         0 0  1k  
+R_R5         0 0  1k  
+R_R8         0 0  1M  
