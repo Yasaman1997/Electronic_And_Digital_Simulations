@@ -1,0 +1,5 @@
+* PSpice Model Editor - Version 9.2
+
+*$
+.model Mbreakn NMOS VTO=0.5 KP=0.1m W=0.5u L=0.25u LAMBDA=0.06
+*$
