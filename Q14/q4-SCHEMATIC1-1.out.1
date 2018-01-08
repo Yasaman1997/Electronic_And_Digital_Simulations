@@ -1,0 +1,93 @@
+
+**** 12/22/17 10:14:18 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1"  [ D:\DIGITAL_E\HW3_2\ORCAD_SIMULATION_Q11\Q14\q4-schematic1-1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "q4-schematic1-1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB ".\q4.lib" 
+* From [PSPICE NETLIST] section of D:\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM a 0 1 0.005 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\q4-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING q4-SCHEMATIC1.net ****
+* source Q4
+M_M2         N00360 N00281 N00143 N00143 Mbreakp           
+M_M3         N00143 N00281 0 0 Mbreakn           
+V_VDD         0 N00360 2.5Vdc
+V_Vin         N00281 0 {a}
+.PARAM  a=0
+
+**** RESUMING q4-schematic1-1.sim.cir ****
+.END
+
+INTERNAL ERROR -- Invalid Number in device Mbreakp
+
+ABORTING SIMULATION
+**** 12/22/17 10:14:18 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1"  [ D:\DIGITAL_E\HW3_2\ORCAD_SIMULATION_Q11\Q14\q4-schematic1-1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+
+  NUNODS  NCNODS  NUMNOD   NUMEL  DIODES    BJTS   JFETS   MFETS GASFETS   IGBTS
+
+       4       4       4       4       0       0       0       2       0       0
+
+NDIGITAL   NSTOP   NTTAR   NTTBR   NTTOV   IFILL    IOPS  PERSPA
+
+       0       4       0       0       0       0       0   0.000
+
+  NUMTTP  NUMRTP  NUMNIT   DIGTP  DIGEVT  DIGEVL
+
+       0       0       0       0       0       0
+
+                                 SECONDS      ITERATIONS
+
+
+          MATRIX SOLUTION           0.00               0
+
+          MATRIX LOAD               0.00
+
+
+          READIN                    0.00
+
+          SETUP                     0.00
+
+          DC SWEEP                  0.00               0
+
+          BIAS POINT                0.00               0
+
+          AC and NOISE              0.00               0
+
+          TRANSIENT ANALYSIS        0.00               0
+
+          OUTPUT                    0.00
+
+          TOTAL JOB TIME            0.00
+
